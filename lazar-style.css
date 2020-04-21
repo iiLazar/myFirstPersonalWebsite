@@ -1,0 +1,927 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: #eef7ff;
+    font-family: "Calibri", Calibri, Arial, sans-serif;
+    color: black;
+}
+
+body {
+    position: relative;
+    background-color: #fff;
+    color: black;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 1.2em;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.08);
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:visited {
+    color: #3399ff;
+}
+
+header, #headSmall, #main, footer {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    height: 270px;
+    padding-top: 50px;
+    border-bottom: 3px solid #0066cc;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.mpharm {
+    padding-bottom: 20px;
+    margin-top: -25px;
+}
+
+.titleLeft {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 70%;
+    float: left;
+}
+
+.titleRight {
+    display: inline-block;
+    widows: 29%;
+    float: right;
+}
+
+#headSmall {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    width: 76.6%;
+    position: fixed;
+    background-color: white;
+    padding-top: 7px;
+    border-bottom: 3px solid #0066cc;
+    border-radius: 0 0 8px 8px;
+    z-index: 1;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+}
+#headSmallProject {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: auto;
+    width: 76.6%;
+    position: fixed;
+    background-color: white;
+    padding-top: 7px;
+    border-bottom: 3px solid #0066cc;
+    border-left: 1px solid #0066cc;
+    border-right: 1px solid #0066cc;
+    border-radius: 0 0 8px 8px;
+    z-index: 1;
+}
+
+.headPosition {
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+#navPDF {
+    display: none;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 1;
+}
+.headSmallLeft {
+    position: absolute;
+    bottom: -10px;
+    left: 1px;
+    display: inline;
+    margin-left: 15px;
+}
+
+#headNavbar {
+    position: absolute;
+    bottom: -17px;
+    right: 170px;
+}
+.headSmallRight {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+}
+#headPicDiv {
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+
+#contactSmall {
+    position: absolute;
+    bottom: 4px;
+    right: 6px;
+}
+
+
+#lazarImg {
+    height: 250px;
+    margin-top: 20px;
+}
+
+
+#contactTable, #referenceTable, #iGuruTable, #downloadTable {
+    width: 80%;
+}
+table {
+    border: 4px solid #0066cc;
+    margin-top: -1px;
+    border-collapse: collapse;
+}
+th {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 3px 15px;
+    border: 3px solid #0066cc;
+}
+.column1 {
+    text-align: center;
+}
+td {
+    padding: 18px 0 1px 20px;
+}
+.rowLast {
+    padding-bottom: 15px;
+    
+}
+
+.icon {
+    color: #0059b3;
+}
+#iconMail, #iconMailSmall {
+    font-size: 1.1em;
+}
+
+#contactSmall table, #contactSmall th, #contactSmall tr, #contactSmall td, #contactSmall .rowLast {
+    padding: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 0.9em;
+}
+#contactSmall .row1 {
+    padding-top: 5px;
+}
+#contactSmall .rowLast {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#contactSmall table {
+    border: 3px solid #0066cc;
+}
+
+
+#downloadTable td {
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+#resume a, #resume a:visited {
+    color: #cc0000;
+    font-weight: bold;
+    border: 4px solid #cc0000;
+    border-radius: 7px;
+    padding: 7px 23px;
+    -webkit-transition: color 0.2s, background-color 0.2s;
+    transition: color 0.2s, background-color 0.2s;
+}
+#resume a:hover {
+    background-color: #cc0000;
+    color: #eee;
+}
+
+#referenceTable td, #iGuruTable td {
+    padding-right: 10px;
+}
+.refName {
+    font-weight: bold;
+}
+.refWork {
+    font-size: 0.8em;
+    padding-top: 0px;
+}
+.omitt {
+    color: #888;
+    font-size: 0.8em;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-top: 2px dotted #ccc;
+}
+
+#PProjTable, #resourceTable {
+    width: 60%;
+    margin: auto;
+    margin-top: -40px;
+    font-size: 1.1em;
+}
+#PProjTable td, #resourceTable td {
+    padding: 15px 20px 15px 0px;
+    text-align: left;
+}
+#PProjTable .column1, #resourceTable .column1 {
+    width: 56%;
+    padding-left: 60px;
+    font-weight: bold;
+}
+#PProjTable .tech, #resourceTable .tech {
+    font-size: 1.2vw;
+}
+
+#PProjTable tr:hover, #resourceTable tr:hover {
+    background-color: #fafafa;
+}
+#PProjTable .temperatureRow {
+    background-color: #fff3f3;
+}
+#PProjTable .temperatureRow:hover {
+    background-color: #ffe7e7;
+}
+#PProjTable a, #PProjTable a:hover, #resourceTable a, #resourceTable a:hover {
+    color: #cc0000;
+}
+#freeCodeCamp a, #freeCodeCamp a:hover, #books a, #books a:hover {
+    color: #0066cc;
+}
+#resourceTableCont {
+    margin-top: 150px;
+}
+
+.omitted {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+.omittTool {
+    display: inline-block;
+    visibility: hidden;
+    position: absolute;
+    top: 100px;
+    left: 90%;
+    z-index: 1;
+    background-color: #333;
+    color: #ccc;
+    width: 200px;
+    font-size: 0.9em;
+    padding: 20px 15px 20px 25px;
+    border-radius: 15px;
+}
+.omittTool a, .omittTool a:hover {
+    color: #66b3ff;
+}
+.omitted:hover .omittTool {
+    visibility: visible;
+}
+.omittTool::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+}
+
+
+
+#titleNavbar {
+    margin: auto;
+    float: right;
+    margin-right: 8%;
+    margin-top: -20px;
+}
+
+#main {
+    margin-top: 100px;
+}
+.mainLeft {
+    width: 25%;
+    float: left;
+    position: sticky;
+    top: 0px;
+    margin-top: 30px;
+    -webkit-transition: top 0.3s;
+    transition: top 0.3s;
+}
+
+.mainRight {
+    width: 74%;
+    float: right;
+}
+
+#pastProj {
+    display: block;
+    text-align: center;
+    font-size: 1.6em;
+    padding: 70px;
+    background-color: #0066cc;
+    color: #fff;
+    border: 6px solid #0066cc;
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+#pastProj:hover {
+    background-color: #0066cc;;
+    color: white;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+#pastProj:active {
+    background-color: #66b3ff;
+    border: 6px solid #66b3ff;
+}
+.pastProj a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.pastProj a:visited {
+    color: #0066cc;
+}
+
+.h2section {
+    font-size: 1.6em;
+    width: 100%;
+    border-bottom: 3px solid #0066cc;
+}
+.content {
+    width: 80%;
+    float: right;
+    margin-right: 8%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.container {
+    margin-bottom: 80px;
+}
+#summaryCont {
+    margin-top: 80px;
+}
+#expSince {
+    float: right;
+    margin-right: 8%;
+}
+.expTitle {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.expPeriod {
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.workPlace {
+    font-style: italic;
+    font-size: 0.9em;
+}
+.description {
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    margin: 15px 0;
+}
+.outcomes {
+    margin-top: 30px;
+    font-size: 1.1em;
+    border-bottom: 1px dotted #ccc;
+}
+.uList {
+    list-style-type: square;
+}
+.honor {
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.skillList, .softwareTable, .personalList {
+    font-size: 1.1em;
+    margin-top: -40px;
+    margin-bottom: -30px;
+    list-style-type: none;
+}
+.skillList li, .softwareList li, .personalList li {
+    padding: 5px;
+}
+
+.softwareTable {
+    font-size: 1em;
+    border: none;
+}
+.softwareTable td {
+    padding: 0;
+}
+.softwareTable tr:nth-child(odd) td {
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+.softwareTable td:nth-child(2) {
+    padding-left: 5%;
+    min-width: 5.2em;
+}
+.barTd {
+    background-color: #eee;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+.barBlue {
+    padding: 12px;
+    background-color: #0066cc;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+.MSOffice {
+    width: 70%;
+}
+.HTML {
+    width: 50%;
+}
+.CSS {
+    width: 30%;
+}
+.JScript {
+    width: 15%;
+}
+.Java {
+    width: 12%;
+}
+.connectura {
+    width: 91%;
+}
+.ASW {
+    width: 70%;
+}
+
+
+
+
+
+
+
+.invisible {
+    visibility: hidden;
+}
+
+#inset {
+    width: 60%;
+    height: 1px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: transparent;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(219,219,219,1);
+    box-shadow: 0px 0px 1px 0px rgba(219,219,219,1);
+}
+
+#neocities {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#neocities img {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+#thankU {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    position: sticky;
+    bottom: -50px;
+    font-size: 0.7em;
+    background-color: rgba(255,255,255,0.95);
+    color: #aaa;
+    border-top: 1px solid #eee;
+    padding: 5px 0px 59px 30px;
+}
+
+.navbar {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    
+}
+.navbarList {
+    list-style-type: none;
+}
+.navbarList li {
+    display: inline-table;
+    vertical-align: middle;
+    font-size: 1.2em;
+    text-align: center;
+    width: 125px;
+    height: 30px;
+    border: 3px solid #fdfdfd;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 13px;
+}
+.headNavbar li {
+    font-size: 1em;
+    width: 125px;
+    height: 60px;
+}
+.navbarList a, .navbarList a:visited, .footerTxt a, .footerTxt a:visited, .footerTxt a:hover {
+    display: table-cell;
+    color: #aaa;
+    vertical-align: middle;
+}
+.navbarList a:hover {
+    background-color: #fbfbfb;
+    border: 3px solid #f4f4f4;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 13px;
+}
+.headNavbar a, .headNavbar a:visited {
+    color: #0066cc;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1455px) {
+    body, footer {
+        width: 95%;
+    }
+    #headSmall, #headSmallProject {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    body, footer {
+        width: 99%;
+    }
+    #headSmall, #headSmallProject {
+        width: 98%;
+    }
+}
+    #PProjTable, #resourceTable {
+        width: 80%;
+        font-size: 1.1em
+}
+
+@media only screen and (max-width: 1140px) {
+    #headMPh, #headJustMPh {
+        display: none;
+    }
+    footer .navbarList li {
+        width: 100px;
+    }
+    #contactTable, #referenceTable, #iGuruTable, #downloadTable {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 1065px) {
+    .headSmallLeft {
+        position: absolute;
+        top: -20px;
+        left: 15px;
+    }
+    #headMPh, #headJustMPh {
+        display: inline;
+    }
+    #headNavbar {
+        margin-left: -40px;   
+    }
+}
+@media only screen and (max-width: 978px) {
+    #main {
+        width: 100%;
+        margin-left: 5px;
+        padding-right: 10px;
+    }
+    #headNavbar li {
+        width: 100px;
+    }
+    footer .navbarList li {
+        width: 75px;
+        font-size: 0.9em;
+    }
+    table td {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #PProjTable, #resourceTable {
+        width: 100%;
+        font-size: 1.1em
+    }
+    #PProjTable td, #resourceTable td {
+        padding: 1vw 0vw 1vw 1vw;
+    }
+    #PProjTable .column1, #resourceTable .column1 {
+        padding-left: 5vw;
+    }
+    #PProjTable .tech, #resourceTable.tech {
+    font-size: 2vw;
+    }
+}
+@media only screen and (max-width: 910px) {
+    #titleNavbar li {
+        width: 80px;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    #headNavbar li {
+        width: 125px;
+        height: 30px;
+    }
+    #headNavbar {
+        width: 500px;
+        position: absolute;
+        right: 80px;
+    }
+    footer .navbar {
+        display: none;
+    }
+    #resume a {
+        padding: 7px 10px;
+    }
+    
+    #pastProj:hover {
+        transform: scale(1);
+    }
+    #pastProj {
+        -webkit-animation: projectPulse 1.5s infinite;
+        animation: projectPulse 1.5s infinite;
+    }
+    -webkit-@keyframes projectPulse {
+        0% {
+            -webkit-transform: scale(1);
+        }
+        16% {
+            -webkit-transform: scale(1.05);
+        }
+        60% {
+            -webkit-transform: scale(1);
+        }
+    }
+    @keyframes projectPulse {
+        0% {transform: scale(1);}
+        16% {transform: scale(1.05);}
+        60% {transform: scale(1);}
+    }
+}
+
+/*630px*/
+@media only screen and (max-width: 700px) {
+    #navPDF {
+        display: block;   
+        top: 1px;
+        left: 5px;
+    }
+    #titleNavbar {
+        width: 110%;
+        float: left;
+        margin-left: -35px;
+        margin-top: -20px;
+        margin-bottom: -90px;
+    }
+    .mainLeft {
+        width: 80%;
+        float: none;
+        margin: auto;
+        position: inherit;
+    }
+    #contactTable, #referenceTable, #iGuruTable, #downloadTable {
+        width: 100%;
+    }
+    #contactTable td, #referenceTable td, #downloadTable td, #iGuruTable td {
+        padding-left: 30px;
+    }
+    .omittTool {
+        display: none;
+    }
+    #resume a {
+        padding: 7px 53px;
+        margin-left: 10%;
+    }
+    #pdf {
+        padding-left: 30px;
+    }
+    .mainRight {
+        width: 90%;
+        float: none;
+        margin: auto;
+        margin-top: 60px;
+        position: inherit;
+    }
+    #neocities {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    }
+    #inset {
+        width: 60%;
+        height: 1px;
+        margin: auto;
+        margin-top: 0px;
+    }
+    #PProjTable, #resourceTable {
+        font-size: 3.5vw;
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    #headSmall, #headSmallProject {
+        display: block;
+        top: 0;
+    }
+    #headPicDiv {
+        opacity: 1;
+    }
+    #titleNavbar {
+        display: none;
+    }
+    #headNavbar li {
+        font-size: 0.8em;
+        width: 100px;
+    }
+    #headNavbar {
+        width: 430px;
+    } 
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 3vw;
+    }
+    .headSmallLeft {
+        top: -3vw;
+    }
+    #headMPh, #headJustMPh {
+        display: inline;
+        font-size: 2.8vw;
+    }
+    #headNavbar li {
+        width: 20vw;
+        height: 6vw;
+        padding: 0px;
+    }
+    #headNavbar li a {
+        padding: 0;
+    }
+    #headNavbar {
+        width: 80vw;
+        position: absolute;
+        left: -2vw;
+        top: 0.5vw;
+    }
+    .headSmallRight {
+        right: 1px;
+    }
+    #contactSmall {
+        position: absolute;
+        bottom: 4px;
+        right: 20vw;
+    }
+    #resume a, #resume a:visited {
+    border: 4px solid #cc0000;
+    border-radius: 7px;
+    padding: 7px 23px;
+    -webkit-transition: color 0.2s, background-color 0.2s;
+    transition: color 0.2s, background-color 0.2s;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #headNavbar {
+        width: 80vw;
+        position: absolute;
+        left: -2vw;
+        top: 1vw;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #headNavbar {
+        width: 80vw;
+        position: absolute;
+        left: -2vw;
+        top: 1.5vw;
+    }
+}
+@media only screen and (max-width: 440px) {
+    #headNavbar {
+        width: 80vw;
+        position: absolute;
+        left: -2vw;
+        top: 2vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #headNavbar {
+        width: 80vw;
+        position: absolute;
+        left: -2vw;
+        top: 4vw;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #headNavbar {
+        width: 60vw;
+        position: absolute;
+        left: 3vw;
+        top: 1vw;
+    }
+    #contactSmall {
+        position: absolute;
+        bottom: 3.5px;
+        right: 28vw;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    #headNavbar {
+        width: 60vw;
+        position: absolute;
+        left: 3vw;
+        top: 2.7vw;
+    }
+}
+
+
+
+
+
+/* COLOR:
+
+BLUE
+-----------------------
+100% 		 #ffffff
+97% 		 #eef7ff
+95% 		 #e6f2ff
+90% 		 #cce6ff
+85% 		 #b3d9ff
+80% 		 #99ccff
+75% 		 #80bfff
+70% 		 #66b3ff
+65% 		 #4da6ff
+60% 		 #3399ff
+55% 		 #1a8cff
+50% 		 #0080ff
+45% 		 #0073e6	
+
+40% 		 #0066cc
+
+35% 		 #0059b3
+30% 		 #004d99
+25% 		 #004080
+20% 		 #003366
+15% 		 #00264d
+10% 		 #001a33
+05% 		 #000d1a
+00% 		 #000000
+*/
