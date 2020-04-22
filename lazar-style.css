@@ -270,7 +270,7 @@ td {
 #PProjTable a, #PProjTable a:hover, #resourceTable a, #resourceTable a:hover {
     color: #cc0000;
 }
-#freeCodeCamp a, #freeCodeCamp a:hover, #books a, #books a:hover {
+#codewars a, #codewars a:hover, #freeCodeCamp a, #freeCodeCamp a:hover, #books a, #books a:hover {
     color: #0066cc;
 }
 #resourceTableCont {
