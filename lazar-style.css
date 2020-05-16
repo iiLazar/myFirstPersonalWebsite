@@ -173,9 +173,22 @@ th {
 td {
     padding: 18px 0 1px 20px;
 }
+
+
+#contactTable td {
+    padding: 2px;
+    padding-left: 10px;
+}
+#contactTable .rowFirst {
+    padding-top: 10px;
+}
+#contactTable .rowLast {
+    padding-bottom: 10px;
+}
+
+
 .rowLast {
     padding-bottom: 15px;
-    
 }
 
 .icon {
@@ -472,7 +485,10 @@ td {
     width: 15%;
 }
 .Java {
-    width: 12%;
+    width: 40%;
+}
+.MySQL {
+    width: 23%;
 }
 .connectura {
     width: 91%;
