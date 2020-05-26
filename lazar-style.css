@@ -453,50 +453,14 @@ td {
 .softwareTable td {
     padding: 0;
 }
-.softwareTable tr:nth-child(odd) td {
-    padding-top: 15px;
-    padding-bottom: 3px;
+.softwareTable tr td {
+    padding-top: 5px;
+    padding-bottom: 13px;
 }
 .softwareTable td:nth-child(2) {
-    padding-left: 5%;
-    min-width: 5.2em;
+    padding-left: 8%;
+    min-width: 5.9em;
 }
-.barTd {
-    background-color: #eee;
-    border: 1px solid transparent;
-    border-radius: 15px;
-}
-.barBlue {
-    padding: 12px;
-    background-color: #0066cc;
-    border: 1px solid transparent;
-    border-radius: 15px;
-}
-.MSOffice {
-    width: 70%;
-}
-.HTML {
-    width: 50%;
-}
-.CSS {
-    width: 30%;
-}
-.JScript {
-    width: 15%;
-}
-.Java {
-    width: 40%;
-}
-.MySQL {
-    width: 23%;
-}
-.connectura {
-    width: 91%;
-}
-.ASW {
-    width: 70%;
-}
-
 
 
 
